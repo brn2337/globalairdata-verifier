@@ -15,8 +15,7 @@ bundles before installation. A deliberately failed installation on the Pi 3B
 successfully restored the previous installation and configuration. These are
 project-run tests, not an independent security audit.
 
-[Main setup guide](https://www.globalairdata.com/install#existing-feeder) ·
-[Installer site](https://install.globalairdata.com/#existing-feeder) ·
+[Setup guide](https://www.globalairdata.com/install#existing-feeder) ·
 [Current signed manifest](https://install.globalairdata.com/releases/globalairdata-feeder-latest.json) ·
 [Detached signature](https://install.globalairdata.com/releases/globalairdata-feeder-latest.json.sig)
 
