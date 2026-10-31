@@ -2,10 +2,26 @@
 
 Public source and trust material for the Global Air Data signed feeder installer.
 
-**Status: 0.1.53 is a canary candidate. General rollout has not been approved.**
-The normal fleet update channel has not been switched to this version. This
-repository is published for inspection; installation instructions will be added
-when the release is approved for general use.
+**Status: signed feeder release 0.1.53 is available for general installation.**
+The normal update channel now offers this signed release. Existing feeders with
+automatic updates enabled receive it on their usual update schedule.
+
+## Install
+
+On your Raspberry Pi or Linux feeder (Python 3.9+, OpenSSL, curl and sha256sum),
+copy and paste this entire block into your SSH terminal:
+
+```sh
+cd "$(mktemp -d)" &&
+curl -fsS https://install.globalairdata.com/releases/install-0.1.53.py -o install.py &&
+echo '4b26e8f5c208f813db67d2ee21f6b7207a397024e76f1610ed297ba9a0d8e175  install.py' | sha256sum -c - &&
+python3 -I install.py
+```
+
+Enter your sudo password if prompted after verification. Follow the
+[feeder setup instructions](https://www.globalairdata.com/install#existing-feeder)
+to claim your feeder. The verifier source and checksums can be inspected here
+before running the command; no GitHub account is required.
 
 ## Files
 
