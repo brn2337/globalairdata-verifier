@@ -36,10 +36,6 @@ verifies the files again before installation.
 Signed updates use the same checks. Unsigned, altered, expired, or older releases
 are rejected. Failed updates use the existing rollback process.
 
-Get the install command from a source you trust. Signatures confirm who authorized
-a release; they don't guarantee bug-free or harmless software. This repository
-contains the verifier, not the full feeder source or an independent security audit.
-
 ## Updates and controls
 
 New installs enable daily updates and remote dashboard commands. Existing
@@ -55,4 +51,4 @@ preferences are preserved. Add these options to the final command as needed:
 - [`release-public.pem`](release-public.pem): public signing key.
 - [`SHA256SUMS`](SHA256SUMS): file checksums.
 
-Release 0.1.55 fixes first installs on existing PiAware and readsb stations. It also includes owner-authorized Wi-Fi management for enabled pilot devices. A standard overlay leaves the station’s existing Wi-Fi configuration in place. The release test covers a clean Debian 12 ARM installation, local claiming, and reinstalling with an owner-disabled timer.
+Release 0.1.55 fixes first installs on existing PiAware and readsb stations. It also includes owner-authorized Wi-Fi management for enabled pilot devices. A standard overlay leaves the station’s existing Wi-Fi configuration in place.
